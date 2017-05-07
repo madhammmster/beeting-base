@@ -1,0 +1,37 @@
+{
+  "name": "beeting-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.14.0",
+    "ejs": "~2.5.2",
+    "mongoose": "~4.6.1",
+    "passport": "~0.3.2",
+    "passport-local": "~1.0.0",
+    "passport-facebook": "~2.1.1",
+    "morgan": "~1.7.0",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "express-session": "~1.14.1",
+    "connect-flash": "~0.1.1",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "file-loader": "^0.9.0",
+    "css-loader": "^0.25.0",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "webpack": "^2.2.0",
+    "vue": "^2.2.1"
+  }
+}
