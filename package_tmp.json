@@ -34,8 +34,6 @@
     
   }
 }
-    // 
-    // 
     // "cross-env": "^3.0.0",
     // 
     // "webpack-dev-server": "^2.2.0"
@@ -43,5 +41,3 @@
     // "passport-twitter": "~1.0.4",
     // "passport-google-oauth" : "~1.0.0",
     // "bcrypt-nodejs" : "latest",
-    // 
-    // 
