@@ -1,0 +1,183 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:36
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        /*font-size: 20px;
+font-style: normal;
+margin-left: 20px;*/
+}
+
+.flaticon-add:before { content: "\f100"; }
+.flaticon-add-1:before { content: "\f101"; }
+.flaticon-add-user:before { content: "\f102"; }
+.flaticon-anchor:before { content: "\f103"; }
+.flaticon-back:before { content: "\f104"; }
+.flaticon-back-1:before { content: "\f105"; }
+.flaticon-back-2:before { content: "\f106"; }
+.flaticon-back-3:before { content: "\f107"; }
+.flaticon-back-4:before { content: "\f108"; }
+.flaticon-back-5:before { content: "\f109"; }
+.flaticon-back-6:before { content: "\f10a"; }
+.flaticon-back-7:before { content: "\f10b"; }
+.flaticon-back-8:before { content: "\f10c"; }
+.flaticon-battery:before { content: "\f10d"; }
+.flaticon-bell:before { content: "\f10e"; }
+.flaticon-box:before { content: "\f10f"; }
+.flaticon-brightness:before { content: "\f110"; }
+.flaticon-brightness-1:before { content: "\f111"; }
+.flaticon-browser:before { content: "\f112"; }
+.flaticon-browser-1:before { content: "\f113"; }
+.flaticon-cancel:before { content: "\f114"; }
+.flaticon-cancel-1:before { content: "\f115"; }
+.flaticon-checked:before { content: "\f116"; }
+.flaticon-clipboard:before { content: "\f117"; }
+.flaticon-clock:before { content: "\f118"; }
+.flaticon-cloud:before { content: "\f119"; }
+.flaticon-coffee-cup:before { content: "\f11a"; }
+.flaticon-computer:before { content: "\f11b"; }
+.flaticon-down-arrow:before { content: "\f11c"; }
+.flaticon-down-arrow-1:before { content: "\f11d"; }
+.flaticon-down-arrow-2:before { content: "\f11e"; }
+.flaticon-down-arrow-3:before { content: "\f11f"; }
+.flaticon-down-arrow-4:before { content: "\f120"; }
+.flaticon-download:before { content: "\f121"; }
+.flaticon-download-1:before { content: "\f122"; }
+.flaticon-download-2:before { content: "\f123"; }
+.flaticon-envelope:before { content: "\f124"; }
+.flaticon-exclamation:before { content: "\f125"; }
+.flaticon-exclamation-1:before { content: "\f126"; }
+.flaticon-eye:before { content: "\f127"; }
+.flaticon-fast-forward:before { content: "\f128"; }
+.flaticon-fast-forward-1:before { content: "\f129"; }
+.flaticon-file:before { content: "\f12a"; }
+.flaticon-flag:before { content: "\f12b"; }
+.flaticon-folder:before { content: "\f12c"; }
+.flaticon-forbidden:before { content: "\f12d"; }
+.flaticon-full:before { content: "\f12e"; }
+.flaticon-heart:before { content: "\f12f"; }
+.flaticon-help:before { content: "\f130"; }
+.flaticon-home:before { content: "\f131"; }
+.flaticon-info:before { content: "\f132"; }
+.flaticon-key:before { content: "\f133"; }
+.flaticon-key-1:before { content: "\f134"; }
+.flaticon-light-bulb:before { content: "\f135"; }
+.flaticon-list:before { content: "\f136"; }
+.flaticon-loading:before { content: "\f137"; }
+.flaticon-locate:before { content: "\f138"; }
+.flaticon-medal:before { content: "\f139"; }
+.flaticon-menu:before { content: "\f13a"; }
+.flaticon-menu-1:before { content: "\f13b"; }
+.flaticon-microphone:before { content: "\f13c"; }
+.flaticon-minus:before { content: "\f13d"; }
+.flaticon-minus-1:before { content: "\f13e"; }
+.flaticon-moon:before { content: "\f13f"; }
+.flaticon-more:before { content: "\f140"; }
+.flaticon-move:before { content: "\f141"; }
+.flaticon-musical-note:before { content: "\f142"; }
+.flaticon-musical-note-1:before { content: "\f143"; }
+.flaticon-mute:before { content: "\f144"; }
+.flaticon-next:before { content: "\f145"; }
+.flaticon-next-1:before { content: "\f146"; }
+.flaticon-next-2:before { content: "\f147"; }
+.flaticon-next-3:before { content: "\f148"; }
+.flaticon-next-4:before { content: "\f149"; }
+.flaticon-next-5:before { content: "\f14a"; }
+.flaticon-next-6:before { content: "\f14b"; }
+.flaticon-next-7:before { content: "\f14c"; }
+.flaticon-orientation:before { content: "\f14d"; }
+.flaticon-paint-brush:before { content: "\f14e"; }
+.flaticon-pause:before { content: "\f14f"; }
+.flaticon-pause-1:before { content: "\f150"; }
+.flaticon-phone-call:before { content: "\f151"; }
+.flaticon-photo-camera:before { content: "\f152"; }
+.flaticon-photo-camera-1:before { content: "\f153"; }
+.flaticon-placeholder:before { content: "\f154"; }
+.flaticon-play:before { content: "\f155"; }
+.flaticon-play-button:before { content: "\f156"; }
+.flaticon-play-button-1:before { content: "\f157"; }
+.flaticon-question:before { content: "\f158"; }
+.flaticon-question-1:before { content: "\f159"; }
+.flaticon-question-2:before { content: "\f15a"; }
+.flaticon-question-3:before { content: "\f15b"; }
+.flaticon-record:before { content: "\f15c"; }
+.flaticon-record-1:before { content: "\f15d"; }
+.flaticon-refresh:before { content: "\f15e"; }
+.flaticon-refresh-1:before { content: "\f15f"; }
+.flaticon-remove-user:before { content: "\f160"; }
+.flaticon-rewind:before { content: "\f161"; }
+.flaticon-rewind-1:before { content: "\f162"; }
+.flaticon-rocket-ship:before { content: "\f163"; }
+.flaticon-screen:before { content: "\f164"; }
+.flaticon-search:before { content: "\f165"; }
+.flaticon-search-1:before { content: "\f166"; }
+.flaticon-security:before { content: "\f167"; }
+.flaticon-settings:before { content: "\f168"; }
+.flaticon-share:before { content: "\f169"; }
+.flaticon-share-1:before { content: "\f16a"; }
+.flaticon-shopping-cart:before { content: "\f16b"; }
+.flaticon-shopping-cart-1:before { content: "\f16c"; }
+.flaticon-sign-in:before { content: "\f16d"; }
+.flaticon-sign-in-1:before { content: "\f16e"; }
+.flaticon-smartphone:before { content: "\f16f"; }
+.flaticon-speech-bubble:before { content: "\f170"; }
+.flaticon-speech-bubble-1:before { content: "\f171"; }
+.flaticon-speech-bubble-2:before { content: "\f172"; }
+.flaticon-star:before { content: "\f173"; }
+.flaticon-stats:before { content: "\f174"; }
+.flaticon-stop:before { content: "\f175"; }
+.flaticon-stop-1:before { content: "\f176"; }
+.flaticon-suitcase:before { content: "\f177"; }
+.flaticon-sync:before { content: "\f178"; }
+.flaticon-sync-1:before { content: "\f179"; }
+.flaticon-tablet:before { content: "\f17a"; }
+.flaticon-tags:before { content: "\f17b"; }
+.flaticon-tape:before { content: "\f17c"; }
+.flaticon-target:before { content: "\f17d"; }
+.flaticon-test-tube:before { content: "\f17e"; }
+.flaticon-test-tube-1:before { content: "\f17f"; }
+.flaticon-text-lines:before { content: "\f180"; }
+.flaticon-thunder:before { content: "\f181"; }
+.flaticon-trash:before { content: "\f182"; }
+.flaticon-unlocked:before { content: "\f183"; }
+.flaticon-up-arrow:before { content: "\f184"; }
+.flaticon-up-arrow-1:before { content: "\f185"; }
+.flaticon-up-arrow-2:before { content: "\f186"; }
+.flaticon-up-arrow-3:before { content: "\f187"; }
+.flaticon-upload:before { content: "\f188"; }
+.flaticon-upload-1:before { content: "\f189"; }
+.flaticon-upload-2:before { content: "\f18a"; }
+.flaticon-user:before { content: "\f18b"; }
+.flaticon-user-1:before { content: "\f18c"; }
+.flaticon-users:before { content: "\f18d"; }
+.flaticon-video-camera:before { content: "\f18e"; }
+.flaticon-volume:before { content: "\f18f"; }
+.flaticon-warning:before { content: "\f190"; }
+.flaticon-warning-1:before { content: "\f191"; }
+.flaticon-wifi:before { content: "\f192"; }
+.flaticon-wifi-1:before { content: "\f193"; }
+.flaticon-wine-glass:before { content: "\f194"; }
+.flaticon-wine-glass-1:before { content: "\f195"; }
+.flaticon-zoom-in:before { content: "\f196"; }
+.flaticon-zoom-out:before { content: "\f197"; }

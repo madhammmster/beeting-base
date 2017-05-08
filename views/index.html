@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hello</title>
-  </head>
-  <body>
+
+<head>
+    <title>Beeting Base - login page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.css">
+    <!--JQuery and SemanticUI js file -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.js"></script>
+
+
+    <link href="/dist/styles/main.css" rel="stylesheet">
+    <link href="/dist/styles/login_page.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/dist/fonts/flaticon.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-main ui grid internally celled">
+
+        <div class="background-container">
+            <div class="background"></div>
+        </div>
+
+        <div class="login-component-container four wide column  ">
+            <div class="login-component ">
+                <div class="logo-container">
+                    <div class="logo"></div>
+                </div>
+                <div class="login-component-inputs-container">
+                    <div class="login-component-input">
+                        <div class="ui small left icon input fluid">
+                            <input type="text" placeholder="login">
+                            <i class="flaticon-user-1 icon"></i>
+                        </div>
+                    </div>
+                    <div class="login-component-input">
+                        <div class="ui small left icon input fluid">
+                            <input type="text" placeholder="password">
+                            <i class="flaticon-key-1 icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-component-text">
+                    <span>OR LOG WITH</span>
+                </div>
+                <div class="login-component-oauth-strategies ui three column grid internally celled">
+
+                    <div class="login-component-oauth-strategy facebook column">
+                        <a href="/auth/facebook">
+                            <div class="strategy-container">
+                                <div class="strategy-icon">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="login-component-oauth-strategy twitter column">
+                        <div class="strategy-container">
+                            <div class="strategy-icon">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="login-component-oauth-strategy linkedin column">
+                        <div class="strategy-container">
+                            <div class="strategy-icon">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div id="app"></div>
     <h1>chuj</h1>
     <script src="/dist/build.js"></script>
-  </body>
+
+</body>
+
 </html>

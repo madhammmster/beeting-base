@@ -12,11 +12,6 @@ module.exports = function (app, passport) {
     // });
 
 
-    // profil uzytkownika
-    // app.get('/app', passportHelper.isLoggedIn, function (req, res) {
-    //     res.sendfile( path.join(app.viewsDir, 'app.html'));
-    // });
-
     // // profil uzytkownika
     // app.get('/profile', passportHelper.isLoggedIn, function (req, res) {
     //     res.render('profile.ejs', {
@@ -41,7 +36,7 @@ module.exports = function (app, passport) {
     });
     // procedura logowania po nacisnieciu przycisku
     app.post('/login', passport.authenticate('local-login', {
-        successRedirect: '/profile', //przekierowanie do zabezpieczonej sekcji profile
+        successRedirect: '/app', //przekierowanie do zabezpieczonej sekcji profile
         failureRedirect: '/login', // przekierowanie do formularza logowania
         failureFlash: true // wsywietl wiadomosc zwrotna
     }));
@@ -63,7 +58,7 @@ module.exports = function (app, passport) {
 
     // obsluga funkcji callback po odpowiedzi ktora przyszla od facebooka
     app.get('/auth/facebook/callback', passport.authenticate('facebook', {
-        successRedirect: '/profile',
+        successRedirect: '/app',
         failureRedirect: '/'
     }));
 
@@ -91,7 +86,7 @@ module.exports = function (app, passport) {
         }));
 
 
-    app.get('*', passportHelper.isLoggedIn, function (req, res) {
-        res.sendfile(path.join(app.viewsDir, 'app.html'));
-    });
+    // app.get('*', passportHelper.isLoggedIn, function (req, res) {
+    //     res.sendfile(path.join(app.viewsDir, 'app.html'));
+    // });
 }

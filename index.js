@@ -28,7 +28,7 @@ mongoose.connect(configDB.url);
 //zmienna pomocnicza dla glownego folderu oraz folderow widoku
 var path = require('path');
 app.appDir = path.dirname(require.main.filename);
-app.viewsDir =path.join(app.appDir, '/views');
+app.viewsDir = path.join(app.appDir, '/views');
 
 //ustawienie folderu dla plikow publicznych i statycznych
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
@@ -57,7 +57,15 @@ app.use(flash()); // wyswietlanie informacji zwrotnych do uzytkownika
 
 // routing aplikacji 
 require('./app/routes/api-routes.js')(app, passport); //route API
+require('./app/routes/app-routes.js')(app, passport); //route APP
 require('./app/routes/routes.js')(app, passport); // przekazanie apliakcji express i passport'a do dalszej obslugi przez routing 
+
+
+
+// app.use('/api', appRouter);
+
+
+
 
 
 
@@ -68,7 +76,7 @@ require('./app/routes/routes.js')(app, passport); // przekazanie apliakcji expre
 
 var port = 8080;
 //uruchomienie aplikacji/serwera express
-app.listen(port, function(){
+app.listen(port, function () {
     console.log('aplikacja zostala uruchomiona na porcie: ' + port);
 });
 

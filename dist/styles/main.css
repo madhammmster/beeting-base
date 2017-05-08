@@ -1,0 +1,23 @@
+body{
+    font-weight: 300;
+    color: #aaaaaa;
+}
+
+.container-main{
+    height: 100vh;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clear{
+    clear: both;
+}

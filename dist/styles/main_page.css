@@ -1,0 +1,280 @@
+.top-bar{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc; 
+    z-index: 999;
+}
+
+.logo{
+    margin-top: 15px;
+    height: 40px;
+}
+
+.container-content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.content{
+    
+    background: #EFEFEF;
+
+    margin-top: 0 !important; 
+    margin-bottom: 0 !important; 
+    margin-left: 0 !important; 
+    margin-right: 0 !important; 
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+}
+
+.left-menu{
+    height: 100%;    
+    position: relative;
+    padding-top: 80px !important;
+}
+
+.left-menu:after{
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    right: 0;
+    width: 1px;
+    background: #ccc;
+    content: "";        
+}
+
+.menu-item{
+    text-align: center;
+    margin: 50px 0;
+    color: #666;
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 10px;
+
+    transition: all .2s;
+}
+
+.menu-item:hover{
+    background: #fff;
+}
+
+.menu-item:hover .menu-item-icon{
+    -webkit-mask-size: 95%;
+}
+
+.menu-item:hover .menu-item-text{
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.menu-item-icon{
+    height: 30px;
+    width: 30px;
+    background-color: #666;
+    margin-right: auto; margin-left: auto;
+    background-position: center;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;    
+    -webkit-mask-position: center;
+      
+    transition: all .2s;
+    
+}
+
+span.bolder{
+    font-weight: 700;
+}
+.menu-item-icon.home{
+    -webkit-mask-image:  url('../icons/home.svg'); 
+}
+
+.menu-item-icon.favorites{
+    -webkit-mask-image:  url('../icons/heart.svg'); 
+}
+
+.list-icon{
+    -webkit-mask-image:  url('../icons/list.svg'); 
+}
+
+.menu-item-icon.profile{
+    -webkit-mask-image:  url('../icons/user.svg'); 
+}
+
+.menu-item-icon.settings{
+    -webkit-mask-image:  url('../icons/settings.svg'); 
+}
+
+.menu-item-text{
+    margin-top: 5px;
+    transition: all .2s;
+    font-size: 13px;
+}
+
+.main-content{
+    
+}
+
+.main-content-header{
+    color: #666;
+}
+
+.main-content-header:after{
+    width: 90%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background: #ccc;
+}
+
+.main-content-header-icon{
+    height: 60px;
+    width: 60px;
+    margin-top: 2px;
+    background-color: #666;
+    background-position: center;
+    -webkit-mask-size: 60%;
+    -webkit-mask-repeat: no-repeat;    
+    -webkit-mask-position: center;
+    float: left;
+}
+
+.main-content-header-text{
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 300;
+    float: left;
+    vertical-align: middle;
+    
+}
+
+.right-content{
+    background: #fff;
+}
+
+.container-informations{
+    height: 30%;
+    
+    position: relative;
+}
+
+.container-credits{
+    width: 120%;
+    height: 30%;
+    margin-top: 10%;
+    background: #333;
+    right: 0;
+    position: absolute;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.credits-text{
+    font-size: 14px;
+    font-weight: 300;
+    height: 15px;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    
+}
+
+.credits-value{
+    position: relative;
+    height: auto;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 100;
+
+
+}
+
+.container-messenger{
+    height: 70%;
+    
+}
+
+.messenger-header{
+    height: 15%;
+    min-height: 90px;
+}
+
+.messenger-header-icon{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+    
+    background-color: #aaaaaa;
+    background-position: center;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;    
+    -webkit-mask-position: center;
+    -webkit-mask-image:  url('../icons/speech-bubble.svg');   
+    
+}
+
+.messenger-header-text{
+    float: left;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.container-current-room{
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.current-room-text{
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.current-room-select{
+    margin-left: 5px;
+    float: left;
+    font-size: 12px;
+    height: 30px;
+}
+
+.current-room-select .selection {
+    display: block !important;
+}
+
+.messenger-main-window{
+    width: 100%;
+    height: 85%;
+    
+}
+
+.messenger-messages{
+    height: 88%;
+    border: solid 1px rgba(34, 36, 38, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.item{
+    
+}
+
+.item .content{
+    background: #fff;
+}
+
+.messenger-send-input{
+    margin-top: 2%;
+    height: 10%;
+}
