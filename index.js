@@ -55,24 +55,18 @@ app.use(passport.initialize()); //inicjacja biblioteki passport i przekaznie jej
 app.use(passport.session()); // przekazanie passportowego mechanizmu sessji ktory trwale przechowuje informacje o zalogowanych uzytkownikach
 app.use(flash()); // wyswietlanie informacji zwrotnych do uzytkownika 
 
+
+//zezwolnie na zapytania cors 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // routing aplikacji 
 require('./app/routes/api-routes.js')(app, passport); //route API
 require('./app/routes/app-routes.js')(app, passport); //route APP
 require('./app/routes/routes.js')(app, passport); // przekazanie apliakcji express i passport'a do dalszej obslugi przez routing 
-
-
-
-// app.use('/api', appRouter);
-
-
-
-
-
-
-
-// app.get('*',function (req, res) {
-//         res.redirect('/app');
-//     });
 
 var port = 8080;
 //uruchomienie aplikacji/serwera express

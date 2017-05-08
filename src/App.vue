@@ -1,51 +1,34 @@
 <template>
   <div>
-    <login-component></login-component>
-    <h1>{{msg}}</h1>
+    <top-bar-component></top-bar-component>
+    <div class="container-content">
+        <div class="content ui three column grid ">
+
+          <menu-component></menu-component>
+
+          <center-panel-component></center-panel-component>
+
+          <right-panel-component></right-panel-component>
+
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import loginComponent from './components/login-component.vue'
+import topBarComponent from './components/top-bar-component.vue'
+import menuComponent from './components/menu/menu-component.vue'
+import rightPanelComponent from './components/right-panel-component.vue'
+import centerPanelComponent from './components/center-panel-component.vue'
 
 export default {
   name: 'app',
   components: {
-    loginComponent
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    topBarComponent,
+    menuComponent,
+    rightPanelComponent,
+    centerPanelComponent
   }
 }
+
 </script>
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

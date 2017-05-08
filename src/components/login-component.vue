@@ -1,17 +1,12 @@
 <template>
-    <h1>TEST</h1>
+  <h1>test</h1>
 </template>
 
 
 
 <script>
 export default {
-  name: 'login-component',
-  data () {
-    return {
-      msg: 'Login component test'
-    }
-  }
+  name: 'login-component'
 }
 </script>
 

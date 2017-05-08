@@ -153,6 +153,12 @@ span.bolder{
     
 }
 
+.main-content-inner-container{  
+    width: 100%;
+    position: relative;
+    
+}
+
 .right-content{
     background: #fff;
 }
